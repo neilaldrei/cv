@@ -1,14 +1,25 @@
 <template>
     <div class="uk-container-large uk-margin-auto uk-margin-large-top uk-margin-large-bottom">
         <div class="uk-card uk-card-default uk-width-1">
-            <h3 class="uk-padding-small uk-text-left" style="background: #F44336; color: #fff;">Default</h3>
+            <h3 class="uk-padding-small uk-text-left" style="background: #F44336; color: #fff;">Skills</h3>
             <div class="uk-card-body">
                 <div class="uk-grid-small uk-grid-row-large uk-child-width-1-3 uk-child-width-expand@s" uk-grid>
-                    <div class="uk-width-1-4@m" v-for="(skill, index) in skills" :key="index">
+                    <div class="uk-width-1-4@m" v-for="(skill, index) in primarySkills" :key="index">
                         <span :class="`mdi ${skill.icon} mdi-24px`" :style="`color: ${skill.avatarColor}`"></span>
                         <h3 class="uk-text-uppercase uk-text-small uk-text-light uk-margin-small-top">{{ skill.name }}</h3>
                     </div>
                 </div>
+
+                <div class="uk-grid-small uk-grid-row-large uk-child-width-1-3 uk-child-width-expand@s" uk-grid v-if="showAllSkills">
+                    <div class="uk-width-1-4@m" v-for="(skill, index) in nonPrimarySkills" :key="index">
+                        <span :class="`mdi ${skill.icon} mdi-24px`" :style="`color: ${skill.avatarColor}`"></span>
+                        <h3 class="uk-text-uppercase uk-text-small uk-text-light uk-margin-small-top">{{ skill.name }}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-card-footer">
+                <button type="button" class="uk-button uk-button-text" @click="showAllSkills = !showAllSkills">See More &nbsp; <span :class="`mdi ${showAllSkills ? 'mdi-arrow-collapse' : 'mdi-arrow-expand'}`"></span></button>
             </div>
         </div>
     </div>
@@ -19,6 +30,7 @@ export default {
     name: "Skills",
     data() {
         return {
+            showAllSkills: false,
             skills: [
                 {
                     name: "Vue.Js",
@@ -48,9 +60,25 @@ export default {
                     name: "Firebase",
                     icon: "mdi-firebase",
                     progress: "80%",
-                    isPrimary: false,
+                    isPrimary: true,
                     avatarColor: "#FFA000",
                     contentColor: "#F57C00"
+                },
+                {
+                    name: "JavaScript",
+                    icon: "mdi-language-javascript",
+                    progress: "80%",
+                    isPrimary: true,
+                    avatarColor: "#f0db4f",
+                    contentColor: "#323330"
+                },
+                {
+                    name: "PHP",
+                    icon: "mdi-language-php",
+                    progress: "60%",
+                    isPrimary: true,
+                    avatarColor: "#4f5b93",
+                    contentColor: "#99cc99"
                 },
                 {
                     name: "HTML5",
@@ -68,14 +96,7 @@ export default {
                     avatarColor: "#264de4",
                     contentColor: "#264de4"
                 },
-                {
-                    name: "JavaScript",
-                    icon: "mdi-language-javascript",
-                    progress: "80%",
-                    isPrimary: true,
-                    avatarColor: "#f0db4f",
-                    contentColor: "#323330"
-                },
+                
                 {
                     name: "Git",
                     icon: "mdi-git",
@@ -83,14 +104,6 @@ export default {
                     isPrimary: false,
                     avatarColor: "#F1502F",
                     contentColor: "#3E2C00"
-                },
-                {
-                    name: "PHP",
-                    icon: "mdi-language-php",
-                    progress: "60%",
-                    isPrimary: false,
-                    avatarColor: "#4f5b93",
-                    contentColor: "#99cc99"
                 },
                 {
                     name: "MySQL",
@@ -178,11 +191,11 @@ export default {
 
     computed: {
         primarySkills() {
-            return this.skills.filter(skill => isPrimary)
+            return this.skills.filter(skill => skill.isPrimary)
         },
 
         nonPrimarySkills() {
-            return false
+            return this.skills.filter(skill => !skill.isPrimary)
         }
     }
 }
