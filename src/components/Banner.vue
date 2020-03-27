@@ -1,0 +1,71 @@
+<template>
+    <div class="profile-banner uk-flex uk-flex-column uk-flex-between">
+        <div class="banner-row uk-margin-auto uk-flex-1 uk-flex uk-flex-center">
+            <div class="uk-margin-auto-vertical">
+                <div class="banner-avatar uk-margin-auto"></div>
+            </div>
+            
+            <div class="uk-margin-auto-vertical">
+                <h1 class="lastname uk-margin-small uk-text-light">PERALTA</h1>
+                <h1 class="firstname uk-margin-small uk-text-light">NEIL ALDREI</h1>
+                <h4 class="title uk-margin-small uk-text-light"><i>WEB DEVELOPER</i></h4>
+                <h3 class="intro">
+                    Hello! My name is Neil. I'm a self taught developer.
+                    I do freelance web development work from time to time. 
+                    If you need help creating or finishing your website, I'll be glad to help.
+                </h3>
+            </div>
+        </div>
+
+        <profile-contacts></profile-contacts>
+    </div>
+</template>
+
+<script>
+import Contacts from "./Contacts";
+export default {
+    name: "ProfileBanner",
+    components: {
+        "profile-contacts": Contacts
+    }
+}
+</script>
+
+<style>
+div.profile-banner {
+    height: 100vh;
+    width: 100%;
+}
+
+div.banner-row>div {
+    width: 35%;
+}
+
+.banner-avatar {
+    height: 275px;
+    width: 275px;
+    background: #F44336;
+    border-radius: 50%;
+}
+
+div.uk-margin-auto-vertical>*{
+    text-align: left;
+}
+
+.lastname {
+    font-size: 22pt;
+}
+
+.firstname {
+    font-size: 32pt;
+}
+
+.title {    
+    font-size: 9pt;
+    letter-spacing: 2px;
+}
+
+.intro {
+    font-size: 12pt;
+}
+</style>
