@@ -3,6 +3,7 @@
         <portfolio-banner></portfolio-banner>
         <portfolio-skills></portfolio-skills>
         <portfolio-timeline></portfolio-timeline>
+        <portfolio-portfolio></portfolio-portfolio>
     </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Skills from "@/components/Skills";
 import Banner from "@/components/Banner";
 import Timeline from "@/components/Timeline";
+import Portfolio from "@/components/Portfolio";
 
 export default {
     name: "Home",
@@ -17,6 +19,7 @@ export default {
         "portfolio-banner": Banner,
         "portfolio-skills": Skills,
         "portfolio-timeline": Timeline,
+        "portfolio-portfolio": Portfolio,
     }
 };
 </script>

@@ -163,6 +163,7 @@ export default {
         float: right;
         width: 66%;
         padding-left: @gutter;
+        border-bottom: 1px solid #F44336;
         h1 {
             margin: 0;
             font-weight: normal;
