@@ -5,14 +5,14 @@
             <div class="uk-card-body">
                 <div class="timeline">
                     <div class="entry" v-for="(year, index) in years" :key="index">
-                        <div class="title">
+                        <div class="title" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
                             <h3>{{ year.year }}</h3>
                         </div>
                         
-                        <div class="body">
-                            <h1 class="uk-text-uppercase">{{ year.title }}</h1>
-                            <h3 class="uk-text-uppercase">{{ year.subtitle }}</h3>
-                            <p class="uk-text-uppercase">{{ year.loc }}</p>
+                        <div class="body" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 500; repeat: true">
+                            <h1 class="uk-text-uppercase" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 600; repeat: true">{{ year.title }}</h1>
+                            <h3 class="uk-text-uppercase" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 600; repeat: true">{{ year.subtitle }}</h3>
+                            <p class="uk-text-uppercase" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600; repeat: true">{{ year.loc }}</p>
                         </div>
                     </div>
                 </div>

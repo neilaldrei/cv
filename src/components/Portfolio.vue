@@ -9,21 +9,23 @@
             <div class="uk-card-body">
                 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-medium-bottom" uk-grid v-for="(webApp, index) in webApps" :key="index">
                     <div class="uk-card-media-left uk-cover-container">
-                        <img :src="webApp.image" alt="" uk-cover>
-                        <canvas width="600" height="400"></canvas>
+                        <div class="uk-animation-reverse uk-transform-origin-top-left" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                            <img :src="webApp.image" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
                     </div>
 
                     <div>
                         <div class="uk-card-body">
-                            <a :href="webApp.url" target="_blank" class="uk-button uk-button-text uk-card-badge uk-label" uk-icon="link">Visit</a>
-                            <h1 class="uk-card-title uk-text-light" v-text="webApp.title"></h1>
-                            <h3 class="uk-text-light" v-text="webApp.description"></h3>
-                            <h5 class="uk-text-light" v-text="webApp.deployed"></h5>
+                            <a :href="webApp.url" target="_blank" class="uk-button uk-button-text uk-card-badge uk-label" uk-icon="link" uk-scrollspy="cls: uk-animation-slide-right-small; repeat: true">Visit</a>
+                            <h1 class="uk-card-title uk-text-light" v-text="webApp.title" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: true"></h1>
+                            <h3 class="uk-text-light" v-text="webApp.description" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true"></h3>
+                            <h5 class="uk-text-light" v-text="webApp.deployed" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true"></h5>
                         </div>
 
-                        <div class="uk-flex uk-flex-row uk-margin-auto">
+                        <div class="uk-flex uk-flex-row uk-margin-auto" uk-scrollspy="cls: uk-animation-fade; target: .language-used-pill; delay: 500; repeat: true">
                             <div class="language-used-pill" :style="`border: 2px solid ${lang.iconColor}`" v-for="(lang, index) in webApp.languages" :key="index">
-                                <span :class="`mdi ${lang.icon} mdi-16px`" :style="`color: ${lang.iconColor};`"></span>
+                                <span :class="`mdi ${lang.icon} mdi-16px`" :style="`color: ${lang.iconColor};`"></span> &nbsp;
                                 <p v-text="lang.name"></p>
                             </div>
                         </div>
@@ -100,7 +102,7 @@ export default {
                 },
                 {
                     title: "Anchovies Lumpia Express",
-                    description: "A promotion website for NCF students to be used as product promotion for their project.",
+                    description: "A website for NCF students to promote their project.",
                     image: require("../assets/images/anchovies.png"),
                     url: "https://anchovies-lumpia-enterprise.firebaseapp.com/",
                     deployed: "November 2019",

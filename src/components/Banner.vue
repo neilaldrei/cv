@@ -2,14 +2,16 @@
     <div class="profile-banner uk-flex uk-flex-column uk-flex-between">
         <div class="banner-row uk-margin-auto uk-flex-1 uk-flex uk-flex-center">
             <div class="uk-margin-auto-vertical">
-                <div class="banner-avatar uk-margin-auto"></div>
+                <div class="banner-avatar uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <img src="../assets/images/epic-neil-gamer.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                </div>
             </div>
             
-            <div class="uk-margin-auto-vertical">
-                <h1 class="lastname uk-margin-small uk-text-light">PERALTA</h1>
-                <h1 class="firstname uk-margin-small uk-text-light">NEIL ALDREI</h1>
-                <h4 class="title uk-margin-small uk-text-light"><i>WEB DEVELOPER</i></h4>
-                <h3 class="intro">
+            <div class="uk-margin-auto-vertical" uk-scrollspy="cls: uk-animation-fade; target: .banner-text; delay: 500; repeat: true">
+                <h1 class="banner-text lastname uk-margin-small uk-text-light">PERALTA</h1>
+                <h1 class="banner-text firstname uk-margin-small uk-text-light">NEIL ALDREI</h1>
+                <h4 class="banner-text title uk-margin-small uk-text-light"><i>WEB DEVELOPER</i></h4>
+                <h3 class="banner-text intro">
                     Hello! My name is Neil. I'm a self taught developer.
                     I do freelance web development work from time to time. 
                     If you need help creating or finishing your website, I'll be glad to help.
@@ -46,6 +48,7 @@ div.banner-row>div {
     width: 275px;
     background: #F44336;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 div.uk-margin-auto-vertical>*{

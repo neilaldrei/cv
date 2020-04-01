@@ -3,15 +3,15 @@
         <div class="uk-card uk-card-default uk-width-1">
             <h3 class="uk-padding-small uk-text-left" style="background: #F44336; color: #fff;">Skills</h3>
             <div class="uk-card-body">
-                <div class="uk-grid-small uk-grid-row-large uk-child-width-1-3 uk-child-width-expand@s" uk-grid>
-                    <div class="uk-width-1-4@m" v-for="(skill, index) in primarySkills" :key="index">
+                <div class="uk-grid-small uk-grid-row-large uk-child-width-1-3 uk-child-width-expand@s" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .skills; delay: 100; repeat: true">
+                    <div class="uk-width-1-4@m skills" v-for="(skill, index) in primarySkills" :key="index">
                         <span :class="`mdi ${skill.icon} mdi-24px`" :style="`color: ${skill.avatarColor}`"></span>
                         <h3 class="uk-text-uppercase uk-text-small uk-text-light uk-margin-small-top">{{ skill.name }}</h3>
                     </div>
                 </div>
 
-                <div class="uk-grid-small uk-grid-row-large uk-child-width-1-3 uk-child-width-expand@s" uk-grid v-if="showAllSkills">
-                    <div class="uk-width-1-4@m" v-for="(skill, index) in nonPrimarySkills" :key="index">
+                <div class="uk-grid-small uk-grid-row-large uk-child-width-1-3 uk-child-width-expand@s" uk-grid v-if="showAllSkills" uk-scrollspy="cls: uk-animation-fade; target: .skills; delay: 100; repeat: true">
+                    <div class="uk-width-1-4@m skills" v-for="(skill, index) in nonPrimarySkills" :key="index">
                         <span :class="`mdi ${skill.icon} mdi-24px`" :style="`color: ${skill.avatarColor}`"></span>
                         <h3 class="uk-text-uppercase uk-text-small uk-text-light uk-margin-small-top">{{ skill.name }}</h3>
                     </div>
@@ -19,7 +19,7 @@
             </div>
 
             <div class="uk-card-footer">
-                <button type="button" class="uk-button uk-button-text" @click="showAllSkills = !showAllSkills">See More &nbsp; <span :class="`mdi ${showAllSkills ? 'mdi-arrow-collapse' : 'mdi-arrow-expand'}`"></span></button>
+                <button type="button" class="languages uk-button uk-button-text" @click="showAllSkills = !showAllSkills">See More &nbsp; <span :class="`mdi ${showAllSkills ? 'mdi-arrow-collapse' : 'mdi-arrow-expand'}`"></span></button>
             </div>
         </div>
     </div>

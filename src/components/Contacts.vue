@@ -1,14 +1,14 @@
 <template>
     <div class="profile-contacts uk-margin-medium-bottom">
-        <div class="uk-flex uk-flex-around uk-margin-small-bottom" style="border-bottom: 1px solid #e5e5e5;">
-            <div v-for="(contact, index) in contacts" :key="index">
+        <div class="uk-flex uk-flex-around uk-margin-small-bottom" style="border-bottom: 1px solid #e5e5e5;" uk-scrollspy="cls: uk-animation-slide-top; target: .contacts; delay: 500; repeat: true">
+            <div class="contacts" v-for="(contact, index) in contacts" :key="index">
                 <span :class="`mdi ${contact.icon} mdi-28px contact-icon`"></span>
                 <h4 class="contact">{{ contact.title }}</h4>
             </div>
         </div>
 
-        <div class="uk-flex uk-flex-around uk-margin-small-top">
-            <div v-for="(social, index) in socials" :key="index">
+        <div class="uk-flex uk-flex-around uk-margin-small-top" uk-scrollspy="cls: uk-animation-slide-bottom; target: .contacts; delay: 500; repeat: true">
+            <div v-for="(social, index) in socials" :key="index" class="contacts">
                 <a :href="social.url" target="_blank" :class="social.title" :style="`color: ${social.color}`">
                     <span :class="`mdi ${social.icon} mdi-36px`"></span>
                 </a>
