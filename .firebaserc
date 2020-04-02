@@ -1,5 +1,11 @@
 {
   "projects": {
-    "default": "neilaldrei-c45a4"
+    "default": "neilaldrei-c45a4",
+    "staging": "neilaldrei-c45a4"
+  },
+  "targets": {
+    "neilaldrei-c45a4": {
+      "hosting": {}
+    }
   }
 }
