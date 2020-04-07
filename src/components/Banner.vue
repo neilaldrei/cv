@@ -1,13 +1,13 @@
 <template>
-    <div class="profile-banner uk-flex uk-flex-column uk-flex-between">
-        <div class="banner-row uk-margin-auto uk-flex-1 uk-flex uk-flex-center">
-            <div class="uk-margin-auto-vertical">
+    <div class="profile-banner uk-height-1-1 uk-width-1-1 uk-flex uk-flex-column uk-flex-between" uk-height-viewport>
+        <div class="banner-row uk-margin-auto uk-flex-1 uk-flex uk-flex-center@m uk-flex-left@s">
+            <div class="uk-margin-auto-vertical uk-width-1-3@m uk-expand@s">
                 <div class="banner-avatar uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                     <img src="../assets/images/epic-neil-gamer.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
                 </div>
             </div>
             
-            <div class="uk-margin-auto-vertical" uk-scrollspy="cls: uk-animation-fade; target: .banner-text; delay: 500; repeat: true">
+            <div class="uk-margin-auto-vertical@m uk-expand@s" uk-scrollspy="cls: uk-animation-fade; target: .banner-text; delay: 500; repeat: true">
                 <h1 class="banner-text lastname uk-margin-small uk-text-light">PERALTA</h1>
                 <h1 class="banner-text firstname uk-margin-small uk-text-light">NEIL ALDREI</h1>
                 <h4 class="banner-text title uk-margin-small uk-text-light"><i>WEB DEVELOPER</i></h4>
@@ -34,15 +34,22 @@ export default {
 </script>
 
 <style>
-div.profile-banner {
-    height: 100vh;
-    width: 100%;
-}
+@media only screen and (max-width: 430px) {
+    .banner-row {
+        flex-flow: column!important;
+        margin-top: 20px;
+    }
 
-div.banner-row>div {
-    width: 35%;
-}
+    .banner-row>div {
+        margin: 15px 0;
+    }
 
+    .banner-row h1, 
+    .banner-row h4, 
+    .banner-row h3 {
+        text-align: center!important;
+    }
+}
 .banner-avatar {
     height: 275px;
     width: 275px;

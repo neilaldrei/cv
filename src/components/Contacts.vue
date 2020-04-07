@@ -1,7 +1,7 @@
 <template>
     <div class="profile-contacts uk-margin-medium-bottom">
-        <div class="uk-flex uk-flex-around uk-margin-small-bottom" style="border-bottom: 1px solid #e5e5e5;" uk-scrollspy="cls: uk-animation-slide-top; target: .contacts; delay: 500; repeat: true">
-            <div class="contacts" v-for="(contact, index) in contacts" :key="index">
+        <div class="uk-flex uk-flex-around uk-margin-small-bottom uk-grid-small" style="border-bottom: 1px solid #e5e5e5;" uk-scrollspy="cls: uk-animation-slide-top; target: .contacts; delay: 500; repeat: true" uk-grid>
+            <div class="contacts uk-width-expand@s " v-for="(contact, index) in contacts" :key="index">
                 <span :class="`mdi ${contact.icon} mdi-28px contact-icon`"></span>
                 <h4 class="contact">{{ contact.title }}</h4>
             </div>
