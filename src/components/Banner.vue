@@ -7,7 +7,7 @@
                 </div>
             </div>
             
-            <div class="uk-margin-auto-vertical@m uk-expand@s" uk-scrollspy="cls: uk-animation-fade; target: .banner-text; delay: 500; repeat: true">
+            <div class="uk-margin-auto-vertical uk-expand@s uk-width-1-3@m uk-expand@s" uk-scrollspy="cls: uk-animation-fade; target: .banner-text; delay: 500; repeat: true">
                 <h1 class="banner-text lastname uk-margin-small uk-text-light">PERALTA</h1>
                 <h1 class="banner-text firstname uk-margin-small uk-text-light">NEIL ALDREI</h1>
                 <h4 class="banner-text title uk-margin-small uk-text-light"><i>WEB DEVELOPER</i></h4>
@@ -16,6 +16,8 @@
                     I do freelance web development work from time to time. 
                     If you need help creating or finishing your website, I'll be glad to help.
                 </h3>
+                
+                <a href="https://drive.google.com/file/d/1UnHC08ISv2srVj8zi9TQM_fx1tX4q4XM/view?usp=sharing" target="_blank" class="banner-text intro uk-button uk-button-text"><span class="mdi mdi-file-account"></span> RESUME</a>
             </div>
         </div>
 
@@ -46,7 +48,8 @@ export default {
 
     .banner-row h1, 
     .banner-row h4, 
-    .banner-row h3 {
+    .banner-row h3,
+    .banner-row a {
         text-align: center!important;
     }
 }
@@ -77,5 +80,13 @@ div.uk-margin-auto-vertical>*{
 
 .intro {
     font-size: 12pt;
+}
+
+a.banner-text {
+    transition: color 500ms;
+}
+
+a.banner-text:hover {
+    color: #F44336;
 }
 </style>
