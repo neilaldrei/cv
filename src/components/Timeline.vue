@@ -1,5 +1,5 @@
 <template>
-    <div class="uk-container">
+    <div class="uk-container-large uk-margin-auto uk-margin-large-top uk-margin-large-bottom">
         <div class="uk-card uk-card-default uk-width-1">
             <h3 class="uk-padding-small uk-text-left" style="background: #F44336; color: #fff;">Timeline</h3>
             <div class="uk-card-body">
@@ -76,7 +76,7 @@ export default {
                     loc: "Naga City, Camarines Sur, PH"
                 },
                 {
-                    year: "2019 - Present",
+                    year: "2019 - 2020",
                     icon: "mdi-briefcase",
                     color: "indigo",
                     title: "Merge Point Systems Solution",

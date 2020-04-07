@@ -3,7 +3,6 @@
         <div class="uk-card uk-card-default uk-width-1">
             <div class="uk-flex uk-flex-between" style="background: #F44336;">
                 <h3 class="uk-padding-small uk-text-left uk-margin-auto-vertical" style="color: #fff;">Portfolio</h3>
-                <button type="button" class="uk-button uk-button-text uk-margin-medium-right uk-margin-auto-vertical" style="color: #fff;" @click="showList = !showList">Slider View &nbsp; <span :class="`mdi ${showList ? 'mdi-arrow-collapse' : 'mdi-arrow-expand'}`"></span></button>
             </div>
 
             <div class="uk-card-body">
@@ -23,7 +22,7 @@
                             <h5 class="uk-text-light" v-text="webApp.deployed" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true"></h5>
                         </div>
 
-                        <div class="uk-flex uk-flex-row uk-margin-auto" uk-scrollspy="cls: uk-animation-fade; target: .language-used-pill; delay: 500; repeat: true">
+                        <div class="uk-flex uk-flex-center@s uk-margin-auto uk-padding-small" uk-scrollspy="cls: uk-animation-fade; target: .language-used-pill; delay: 500; repeat: true">
                             <div class="language-used-pill" :style="`border: 2px solid ${lang.iconColor}`" v-for="(lang, index) in webApp.languages" :key="index">
                                 <span :class="`mdi ${lang.icon} mdi-16px`" :style="`color: ${lang.iconColor};`"></span> &nbsp;
                                 <p v-text="lang.name"></p>
