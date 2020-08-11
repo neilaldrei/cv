@@ -96,7 +96,14 @@ export default {
                     avatarColor: "#264de4",
                     contentColor: "#264de4"
                 },
-                
+                {
+                    name: "DENO",
+                    icon: "mdi-nodejs",
+                    progress: "85%",
+                    isPrimary: false,
+                    avatarColor: "#000",
+                    contentColor: "#000"
+                },
                 {
                     name: "Git",
                     icon: "mdi-git",
