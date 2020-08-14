@@ -101,8 +101,16 @@ export default {
                     icon: "mdi-nodejs",
                     progress: "85%",
                     isPrimary: false,
-                    avatarColor: "#000",
+                    avatarColor: "#444",
                     contentColor: "#000"
+                },
+                {
+                    name: "NODE.JS",
+                    icon: "mdi-nodejs",
+                    progress: "85%",
+                    isPrimary: false,
+                    avatarColor: "#68A063",
+                    contentColor: "#68A063"
                 },
                 {
                     name: "Git",
