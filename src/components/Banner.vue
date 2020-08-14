@@ -3,7 +3,7 @@
         <div class="banner-row uk-margin-auto uk-flex-1 uk-flex uk-flex-center@m uk-flex-left@s">
             <div class="uk-margin-auto-vertical uk-width-1-3@m uk-expand@s">
                 <div class="banner-avatar uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                    <img src="../assets/images/epic-neil-gamer.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                    <img src="../assets/images/gamer.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
                 </div>
             </div>
             

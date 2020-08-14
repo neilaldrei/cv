@@ -59,7 +59,7 @@ export default {
                     icon: "mdi-at"
                 },
                 {
-                    title: "+63915-204-4704",
+                    title: "+63951-741-6045",
                     icon: "mdi-cellphone"
                 },
             ]

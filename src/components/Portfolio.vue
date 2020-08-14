@@ -47,7 +47,7 @@ export default {
                     description: "A promotion website for NCF Students that will be used to promote their product for their thesis.",
                     image: require("../assets/images/maadds.png"),
                     url: "https://maaddsenterprise.firebaseapp.com/",
-                    deployed: "June 2018",
+                    deployed: "JUNE 2018",
                     languages: [
                         {
                             icon: "mdi-vuejs",
@@ -66,7 +66,7 @@ export default {
                     description: "A Web App for promoting, managing athletes and marketplace for their swimming equipments.",
                     image: require("../assets/images/triton.png"),
                     url: "http://triton-swim-club.herokuapp.com/",
-                    deployed: "October 2018",
+                    deployed: "OCT 2018",
                     languages: [
                         {
                             icon: "mdi-vuejs",
@@ -85,7 +85,7 @@ export default {
                     description: "A poll web app that will be used for CBSUA 2019 Pageant",
                     image: require("../assets/images/cbsua-poll.png"),
                     url: "https://cbsua-cvm-poll.firebaseapp.com/",
-                    deployed: "February 2019",
+                    deployed: "FEB 2019",
                     languages: [
                         {
                             icon: "mdi-vuejs",
@@ -104,7 +104,7 @@ export default {
                     description: "A website for NCF students to promote their project.",
                     image: require("../assets/images/anchovies.png"),
                     url: "https://anchovies-lumpia-enterprise.firebaseapp.com/",
-                    deployed: "November 2019",
+                    deployed: "NOV 2019",
                     languages: [
                         {
                             icon: "mdi-vuejs",
@@ -123,7 +123,7 @@ export default {
                     description: "A promotion website to showcase the new NCF Annex building for the CBA Students.",
                     image: require("../assets/images/ncf-annex.png"),
                     url: "https://ncf-cba-annex.firebaseapp.com/",
-                    deployed: "November 2019",
+                    deployed: "NOV 2019",
                     languages: [
                         {
                             icon: "mdi-vuejs",
@@ -138,11 +138,30 @@ export default {
                     ]
                 },
                 {
+                    title: "JTTNet Messenger",
+                    description: "A messaging app to manage payment status of applicant's reference number",
+                    image: require("../assets/images/jttnet.png"),
+                    url: "http://flippy-dippy.herokuapp.com/",
+                    deployed: "DEC 2019 | ALPHA ONLY",
+                    languages: [
+                        {
+                            icon: "mdi-vuejs",
+                            name: "Vue.JS",
+                            iconColor: "#42b883"
+                        },
+                        {
+                            icon: "mdi-laravel",
+                            name: "Laravel",
+                            iconColor: "#F05340"
+                        },
+                    ]
+                },
+                {
                     title: "CBSUA Pageant 2020",
                     description: "A web app for CBSUA Pageant 2020 that will be used by judges to instantly calculate their given scores.",
                     image: require("../assets/images/cbsua-2020.png"),
                     url: "https://cbsua-pageant-2020.herokuapp.com/",
-                    deployed: "February 2020",
+                    deployed: "FEB 2020",
                     languages: [
                         {
                             icon: "mdi-vuejs",
@@ -161,7 +180,26 @@ export default {
                     description: "A web app for the CBSUA MLBB tounament that will handle the registration and randomize all match-ups as well as score management.",
                     image: require("../assets/images/cbsua-mlbb.png"),
                     url: "https://cbsua-ml.firebaseapp.com/",
-                    deployed: "February 2020",
+                    deployed: "FEB 2020",
+                    languages: [
+                        {
+                            icon: "mdi-vuejs",
+                            name: "Vue.JS",
+                            iconColor: "#42b883"
+                        },
+                        {
+                            icon: "mdi-firebase",
+                            name: "Firebase",
+                            iconColor: "#FFA000"
+                        },
+                    ]
+                },
+                {
+                    title: "TREE SHOP",
+                    description: "A web app for online selling and other delivery services.",
+                    image: require("../assets/images/shoppers.jpg"),
+                    url: "http://nshop.herokuapp.com/",
+                    deployed: "JULY 2020 | ALPHA",
                     languages: [
                         {
                             icon: "mdi-vuejs",
