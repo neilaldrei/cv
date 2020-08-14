@@ -196,7 +196,7 @@ export default {
                 },
                 {
                     title: "TREE SHOP",
-                    description: "A web app for online selling and other delivery services.",
+                    description: "A web & mobile app for online selling and other delivery services.",
                     image: require("../assets/images/shoppers.jpg"),
                     url: "http://nshop.herokuapp.com/",
                     deployed: "JULY 2020 | ALPHA",
@@ -207,9 +207,28 @@ export default {
                             iconColor: "#42b883"
                         },
                         {
-                            icon: "mdi-firebase",
-                            name: "Firebase",
-                            iconColor: "#FFA000"
+                            icon: "mdi-laravel",
+                            name: "Laravel",
+                            iconColor: "#F05340"
+                        },
+                    ]
+                },
+                {
+                    title: "JJ AQUAFRANCIA",
+                    description: "A web app for payroll and taking customer orders.",
+                    image: require("../assets/images/ss.jpg"),
+                    url: "http://jjaquafrancia.herokuapp.com/",
+                    deployed: "LAUNCHING ALPHA SOON",
+                    languages: [
+                        {
+                            icon: "mdi-vuejs",
+                            name: "Vue.JS",
+                            iconColor: "#42b883"
+                        },
+                        {
+                            icon: "mdi-laravel",
+                            name: "Laravel",
+                            iconColor: "#F05340"
                         },
                     ]
                 },
