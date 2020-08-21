@@ -17,7 +17,7 @@
                     If you need help creating or finishing your website, I'll be glad to help.
                 </h3>
                 
-                <a href="https://drive.google.com/open?id=1kYPEWclLakqYq8lX2ArYBFdjL-r4O15h" target="_blank" class="banner-text intro uk-button uk-button-text"><span class="mdi mdi-file-account"></span> RESUME</a>
+                <a href="https://drive.google.com/file/d/16VBnmqyVx0QIHdaFXHQ-wS2lb6G63BcC/view?usp=sharing" target="_blank" class="banner-text intro uk-button uk-button-text"><span class="mdi mdi-file-account"></span> RESUME</a>
             </div>
         </div>
 

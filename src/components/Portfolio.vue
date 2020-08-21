@@ -195,7 +195,7 @@ export default {
                     ]
                 },
                 {
-                    title: "TREE SHOP",
+                    title: "ONLINE SHOP",
                     description: "A web & mobile app for online selling and other delivery services.",
                     image: require("../assets/images/shoppers.jpg"),
                     url: "http://nshop.herokuapp.com/",
@@ -218,7 +218,7 @@ export default {
                     description: "A web app for payroll and taking customer orders.",
                     image: require("../assets/images/ss.jpg"),
                     url: "http://jjaquafrancia.herokuapp.com/",
-                    deployed: "LAUNCHING ALPHA SOON",
+                    deployed: "AUGUST 2020 | ALPHA ONLY",
                     languages: [
                         {
                             icon: "mdi-vuejs",
