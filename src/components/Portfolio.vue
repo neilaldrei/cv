@@ -80,25 +80,25 @@ export default {
                         },
                     ]
                 },
-                {
-                    title: "CBSUA Mr. and Ms. College of Vet Med Poll",
-                    description: "A poll web app that will be used for CBSUA 2019 Pageant",
-                    image: require("../assets/images/cbsua-poll.png"),
-                    url: "https://cbsua-cvm-poll.firebaseapp.com/",
-                    deployed: "FEB 2019",
-                    languages: [
-                        {
-                            icon: "mdi-vuejs",
-                            name: "Vue.JS",
-                            iconColor: "#42b883"
-                        },
-                        {
-                            icon: "mdi-firebase",
-                            name: "Firebase",
-                            iconColor: "#FFA000"
-                        },
-                    ]
-                },
+                // {
+                //     title: "CBSUA Mr. and Ms. College of Vet Med Poll",
+                //     description: "A poll web app that will be used for CBSUA 2019 Pageant",
+                //     image: require("../assets/images/cbsua-poll.png"),
+                //     url: "https://cbsua-cvm-poll.firebaseapp.com/",
+                //     deployed: "FEB 2019",
+                //     languages: [
+                //         {
+                //             icon: "mdi-vuejs",
+                //             name: "Vue.JS",
+                //             iconColor: "#42b883"
+                //         },
+                //         {
+                //             icon: "mdi-firebase",
+                //             name: "Firebase",
+                //             iconColor: "#FFA000"
+                //         },
+                //     ]
+                // },
                 {
                     title: "Anchovies Lumpia Express",
                     description: "A website for NCF students to promote their project.",
@@ -156,46 +156,46 @@ export default {
                         },
                     ]
                 },
+                // {
+                //     title: "CBSUA Pageant 2020",
+                //     description: "A web app for CBSUA Pageant 2020 that will be used by judges to instantly calculate their given scores.",
+                //     image: require("../assets/images/cbsua-2020.png"),
+                //     url: "https://cbsua-pageant-2020.herokuapp.com/",
+                //     deployed: "FEB 2020",
+                //     languages: [
+                //         {
+                //             icon: "mdi-vuejs",
+                //             name: "Vue.JS",
+                //             iconColor: "#42b883"
+                //         },
+                //         {
+                //             icon: "mdi-laravel",
+                //             name: "Laravel",
+                //             iconColor: "#F05340"
+                //         },
+                //     ]
+                // },
+                // {
+                //     title: "CBSUA MLBB",
+                //     description: "A web app for the CBSUA MLBB tounament that will handle the registration and randomize all match-ups as well as score management.",
+                //     image: require("../assets/images/cbsua-mlbb.png"),
+                //     url: "https://cbsua-ml.firebaseapp.com/",
+                //     deployed: "FEB 2020",
+                //     languages: [
+                //         {
+                //             icon: "mdi-vuejs",
+                //             name: "Vue.JS",
+                //             iconColor: "#42b883"
+                //         },
+                //         {
+                //             icon: "mdi-firebase",
+                //             name: "Firebase",
+                //             iconColor: "#FFA000"
+                //         },
+                //     ]
+                // },
                 {
-                    title: "CBSUA Pageant 2020",
-                    description: "A web app for CBSUA Pageant 2020 that will be used by judges to instantly calculate their given scores.",
-                    image: require("../assets/images/cbsua-2020.png"),
-                    url: "https://cbsua-pageant-2020.herokuapp.com/",
-                    deployed: "FEB 2020",
-                    languages: [
-                        {
-                            icon: "mdi-vuejs",
-                            name: "Vue.JS",
-                            iconColor: "#42b883"
-                        },
-                        {
-                            icon: "mdi-laravel",
-                            name: "Laravel",
-                            iconColor: "#F05340"
-                        },
-                    ]
-                },
-                {
-                    title: "CBSUA MLBB",
-                    description: "A web app for the CBSUA MLBB tounament that will handle the registration and randomize all match-ups as well as score management.",
-                    image: require("../assets/images/cbsua-mlbb.png"),
-                    url: "https://cbsua-ml.firebaseapp.com/",
-                    deployed: "FEB 2020",
-                    languages: [
-                        {
-                            icon: "mdi-vuejs",
-                            name: "Vue.JS",
-                            iconColor: "#42b883"
-                        },
-                        {
-                            icon: "mdi-firebase",
-                            name: "Firebase",
-                            iconColor: "#FFA000"
-                        },
-                    ]
-                },
-                {
-                    title: "ONLINE SHOP",
+                    title: "Starshop",
                     description: "A web & mobile app for online selling and other delivery services.",
                     image: require("../assets/images/shoppers.jpg"),
                     url: "http://nshop.herokuapp.com/",

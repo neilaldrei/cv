@@ -60,15 +60,15 @@ export default {
                     loc: "Naga City, Camarines Sur, PH"
                 },
                 {
-                    year: "2015 - 2019",
+                    year: "Nov 2015 - Apr 2019",
                     icon: "mdi-briefcase",
                     color: "indigo",
                     title: "JTTNet",
-                    subtitle: "Encoder",
+                    subtitle: "Data Encoder",
                     loc: "Naga City, Camarines Sur, PH"
                 },
                 {
-                    year: "2018 - Present",
+                    year: "Jan 2018 - Apr 2019",
                     icon: "mdi-briefcase",
                     color: "indigo",
                     title: "Freelancer",
@@ -76,7 +76,7 @@ export default {
                     loc: "Naga City, Camarines Sur, PH"
                 },
                 {
-                    year: "2019 - 2020",
+                    year: "Apr 2019 - Nov 2020",
                     icon: "mdi-briefcase",
                     color: "indigo",
                     title: "Merge Point Systems Solution",
